@@ -54,3 +54,19 @@ console.log(greet())
 console.log(greet("Gangster"))
 
 
+// Task #8
+const newArray = [1,2,3,4,5];
+
+const addedArray = newArray.map(element => element + 5);
+
+console.log(addedArray);
+
+
+// Task #9
+const threeParams = newArray.map((element, index, array) => {
+    console.log(element, index, array);
+    
+    return element + 3;
+});
+
+console.log(threeParams);
